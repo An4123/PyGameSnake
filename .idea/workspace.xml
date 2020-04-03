@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3b045fe-8413-49b0-b030-c4943e6c462a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1585917002569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585917002569" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1585917002569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585917002569" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1585917002569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585917002569" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1585917002569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585917002569" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585546003165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -60,6 +60,9 @@ def main():
             pg.mixer.Sound.play(sound)
             score += 1
             a.apple()                       # else rerandomize the apple
+            ## CHECK IF APPLE IS GOING TO BE IN THE SNAKE.
+            # IF IN THE SNAKE
+            # PICK A NEW POSITION.
         refillAndUpdate(s,a,window)         # replace and reprint game scrren
         playing = checkColisions(s)         # check for collisions
     print("Your score is: {}".format(score))
