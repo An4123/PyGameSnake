@@ -13,9 +13,15 @@ class Box():
         dist = self.width // self.rows
         pg.draw.rect(wind,self.color,(self.x,self.y,dist,dist))
 
-    def apple(self):
-        self.x = random.randint(1,40) * 6
-        self.y = random.randint(1,40) * 6
+    def apple(self, snake):
+        x = random.randint(1,40) * 6        # Generate random x cord
+        y = random.randint(1,40) * 6        # Generate random y cord
+        for i in snake:                     # check if these 2 random cords are overlapping on the snake
+            if x == i.x and y == i.y:           # if they are then generate 2 new cordinates
+                x = random.randint(1,40) * 6
+                y = random.randint(1,40) * 6
+        self.x = x
+        self.y = y
 
 class Snake():
     def __init__(self, currentX = 0, currentY = 0):

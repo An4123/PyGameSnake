@@ -30,7 +30,7 @@ def checkColisions(s):
 
 def main():
     width = 250         # width and height because of square game
-    score = 0
+    score = 1
     pg.init()
     sound = pg.mixer.Sound('biteSound.wav')
     window = pg.display.set_mode((width,width)) # Set window size
@@ -38,13 +38,13 @@ def main():
 
     s = sn.Snake()
     a = sn.Box((0,255,0))                   # initiate apple
-    a.apple()                               # randomize the apple
+    a.apple(s.snake)                               # randomize the apple
     keys = pg.key.get_pressed()             # set default key pres
     playing = True                          # bool to keep game running
     clock = pg.time.Clock()                 # controll fps
     while playing:
         pg.time.delay(100)                  # delay move by 100/1000 of a second
-        clock.tick(10)                      # keeps it at 10fps
+        clock.tick(144)                      # keeps it at 10fps
         for event in pg.event.get():
             if event.type == pg.QUIT:       # if user quits
                 pg.quit()
@@ -59,10 +59,7 @@ def main():
         else:
             pg.mixer.Sound.play(sound)
             score += 1
-            a.apple()                       # else rerandomize the apple
-            ## CHECK IF APPLE IS GOING TO BE IN THE SNAKE.
-            # IF IN THE SNAKE
-            # PICK A NEW POSITION.
+            a.apple(s.snake)                       # else rerandomize the apple
         refillAndUpdate(s,a,window)         # replace and reprint game scrren
         playing = checkColisions(s)         # check for collisions
     print("Your score is: {}".format(score))
